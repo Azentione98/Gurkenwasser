@@ -7,8 +7,6 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import wurstwasser.gurkenwassertest.messages.messages;
 
-
-
 public class cmdEnderchest implements CommandExecutor
 
 {
@@ -21,7 +19,6 @@ public class cmdEnderchest implements CommandExecutor
         {
             p = (Player) commandSender;
             p.openInventory(p.getEnderChest());
-            p.sendMessage(messages.PREFIX + "Enderchest geöffnet!");
             return true;
         } else {
 

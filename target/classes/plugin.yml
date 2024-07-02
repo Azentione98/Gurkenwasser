@@ -34,6 +34,23 @@ commands:
     usage: /<command>
     aliases: [av]
     permission: gurkenwasser.anvil
+  craft:
+    usage: /<command>
+    aliases: [craft, workbench, wb]
+    permission: gurkenwasser.craft
+  enchant:
+    usage: /<command>
+    aliases: [et, etable, enchanttable]
+    permission: gurkenwasser.enchant
+  repair:
+    usage: /<command>
+    permission: gurkenwasser.repair
+  repairall:
+    usage: /<command>
+    permission: gurkenwasser.repair
+  back:
+    usage: /<command>
+    permission: gurkenwasser.back
 
 permissions:
   gurkenwasser.day:
@@ -53,4 +70,12 @@ permissions:
   gurkenwasser.gm:
     default: op
   gurkenwasser.anvil:
+    default: op
+  gurkenwasser.craft:
+    default: op
+  gurkenwasser.enchant:
+    default: op
+  gurkenwasser.repair:
+    default: op
+  gurkenwasser.back:
     default: op

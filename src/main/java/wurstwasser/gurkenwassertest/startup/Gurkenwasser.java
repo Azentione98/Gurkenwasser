@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import wurstwasser.gurkenwassertest.commands.*;
 import wurstwasser.gurkenwassertest.messages.messages;
 
+
 public final class Gurkenwasser extends JavaPlugin {
 
     @Override
@@ -35,8 +36,15 @@ public final class Gurkenwasser extends JavaPlugin {
         this.getCommand(cmdEnderchest.CMD_ENDERCHEST).setExecutor(cmdEnderchest);
 
         this.getCommand("gm").setExecutor(new cmdGamemode());
-
         this.getCommand("anvil").setExecutor(new cmdAnvil());
+        this.getCommand("craft").setExecutor(new cmdCraft());
+        this.getCommand("enchant").setExecutor(new cmdEnchant());
+        this.getCommand("repair").setExecutor(new cmdRepair());
+        this.getCommand("repairall").setExecutor(new cmdRepair());
+
+        cmdBack backCommand = new cmdBack();
+        this.getCommand("back").setExecutor(backCommand);
+        getServer().getPluginManager().registerEvents(backCommand, this);
 
         cmdTimeWeatherMenu cmdTimeWeatherMenu = new cmdTimeWeatherMenu();
         this.getCommand(cmdTimeWeatherMenu.CMD_MENU).setExecutor(cmdTimeWeatherMenu);
