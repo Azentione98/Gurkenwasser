@@ -8,8 +8,14 @@ Condition Commands:
 Basic Commands:
 - /fly (Lässt den ausführenden Spieler fliegen)
 - /gm (Ändert den Gamemode) [gm, mode, gamemode]
+- /back (Teleportiert die Person zur letzten Position zurück)
+- /repair (Repariert den Gegenstand in der Hand)
+- /repairall (Repariert das ganze Inventar)
 
 Tables:
 - /anvil (Öffnet den Amboss) [av]
 - /enderchest (Öffnet die Enderchest) [ec, echest]
+- /craft (Öffnet die Craftingtable) [workbench, wb]
+- /enchant (Öffnet die Enchant Table) [et, etable, enchanttable]
+
 
