@@ -1,0 +1,56 @@
+name: Gurkenwasser
+version: '1.0.4'
+main: wurstwasser.gurkenwassertest.startup.Gurkenwasser
+api-version: '1.20'
+
+commands:
+  day:
+    usage: /<command>
+    permission: gurkenwasser.day
+  night:
+    usage: /<command>
+    permission: gurkenwasser.night
+  sun:
+    usage: /<command>
+    permission: gurkenwasser.sun
+  rain:
+    usage: /<command>
+    permission: gurkenwasser.rain
+  fly:
+    usage: /<command>
+    permission: gurkenwasser.fly
+  menu:
+    usage: /<command>
+    permission: gurkenwasser.menu
+  enderchest:
+    usage: /<command>
+    permission: gurkenwasser.enderchest
+    aliases: [echest, ec]
+  gm:
+    usage: "/gm <mode>"
+    aliases: [gm, gamemode, mode]
+    permission: gurkenwasser.gm
+  anvil:
+    usage: /<command>
+    aliases: [av]
+    permission: gurkenwasser.anvil
+
+permissions:
+  gurkenwasser.day:
+    default: op
+  gurkenwasser.night:
+    default: op
+  gurkenwasser.sun:
+    default: op
+  gurkenwasser.rain:
+    default: op
+  gurkenwasser.fly:
+    default: op
+  gurkenwasser.menu:
+    default: op
+  gurkenwasser.enderchest:
+    default: op
+  gurkenwasser.gm:
+    default: op
+  gurkenwasser.anvil:
+    default: op
